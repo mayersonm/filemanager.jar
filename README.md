@@ -3,6 +3,18 @@
 	Implementación de rutinas para gestionar archivos.
 </p>
 
+<div>
+	<h3>Dependencias</h3>
+	<p>
+		<strong>jsch-0.1.54.jar</strong>
+		Usado para el tratamiento SFTP.
+	</p>
+</div>
+<div>
+	<h3>Consideraciones</h3>
+	<p>El archivo FileManager-1.0-jar-with-dependencies.jar incluye las dependencias.</p>
+</div>
+
 <br><br>
 
 <div>
