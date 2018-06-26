@@ -4,6 +4,10 @@ package com.mdp.filemanager;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 
 public class FileSystem {
     public boolean mv(String sourceFile, String destFile) throws Exception {
@@ -17,23 +21,9 @@ public class FileSystem {
     }
 
     public boolean cp(String pathNameSource, String pathNameDest) throws Exception {
-        File fileSource = new File(pathNameSource);
-        File fileDest = new File(pathNameDest);
-
-        if (fileSource.exists()) {
-            FileOutputStream out;
-            FileInputStream in = new FileInputStream(fileSource);
-            out = new FileOutputStream(fileDest);
-            int c;
-            while ((c = in.read()) != -1) {
-                out.write(c);
-            }
-
-            out.close();
-            in.close();
-        }else{
-            throw new Exception("Source file not exist.");
-        }
+        Path origenPath = FileSystems.getDefault().getPath(pathNameSource);
+        Path destinoPath = FileSystems.getDefault().getPath(pathNameDest);
+        Files.copy(origenPath, destinoPath, StandardCopyOption.REPLACE_EXISTING);
         
         return true;
     }

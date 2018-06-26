@@ -4,6 +4,7 @@ package com.mdp.filemanager;
 import com.jcraft.jsch.ChannelSftp;
 import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.Session;
+import java.util.Vector;
 
 public class FileSFTP {
     private String host;
@@ -50,9 +51,27 @@ public class FileSFTP {
 
     public void get(String ftpPath, String filePath) throws Exception {
         if (this.isConected()) {
-            this.channelSftp.get(filePath, ftpPath);
+            this.channelSftp.get(ftpPath,filePath);
         }else{
             throw new Exception("Session is not open.");
         }
     }
+    
+    public String[] ls(String path)throws Exception{
+        int j = 0;
+        
+        Vector vector = this.channelSftp.ls(path);
+        String[] lista = new String[vector.size()-2];
+
+        for(int i = 0; i <= vector.size()-1;i++){
+            ChannelSftp.LsEntry item = (ChannelSftp.LsEntry) vector.get(i);
+            if(!(item.getFilename().equals(".") || item.getFilename().equals(".."))){
+                lista[j] = item.getFilename();
+                j++;
+            }
+        }
+        
+        return lista;
+    }
+    
 }
