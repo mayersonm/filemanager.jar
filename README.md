@@ -26,18 +26,18 @@
 					Metodo para copiar un archivo.
 				</td>
 				<td>
-					<p>
+					<div>
 						<strong>String pathNameSource</strong>
 						<p>
 							Ruta y nombre de archivo que se desea copiar.
 						</p>
-					</p>
-					<p>
+					</div>
+					<div>
 						<strong>String pathNameDest</strong>
 						<p>
 							Ruta y nombre del archivo donde será copiado.
 						</p>
-					</p>
+					</div>
 				</td>
 				<td>
 					<strong>boolean</strong>
@@ -53,18 +53,18 @@
 					Metodo para mover un archivo.
 				</td>
 				<td>
-					<p>
+					<div>
 						<strong>String sourceFile</strong>
 						<p>
 							Ruta y nombre de archivo que se desea mover.
 						</p>
-					</p>
-					<p>
+					</div>
+					<div>
 						<strong>String destFile</strong>
 						<p>
 							Ruta y nombre del archivo donde será movido.
 						</p>
-					</p>
+					</div>
 				</td>
 				<td>
 					<strong>boolean</strong>
@@ -80,11 +80,9 @@
 					Metodo para borrar un archivo.
 				</td>
 				<td>
+					<strong>String pathName</strong>
 					<p>
-						<strong>String pathName</strong>
-						<p>
-							Ruta y nombre de archivo a borrar.
-						</p>
+						Ruta y nombre de archivo a borrar.
 					</p>
 				</td>
 				<td>
@@ -101,12 +99,12 @@
 					Metodo que lista los archivos y carpetas de una ruta especifica.
 				</td>
 				<td>
-					<p>
+					<div>
 						<strong>String path</strong>
 						<p>
 							Ruta donde se buscarán los archivos y carpetas.
 						</p>
-					</p>
+					</div>
 				</td>
 				<td>
 					<strong>String[]</strong>
@@ -154,19 +152,18 @@
 							Número de puerto del servidor SFTP.
 						</p>
 					</div>
-
-					<p>
+					<div>
 						<strong>String user</strong>
-						<div>
+						<p>
 							Usuario de acceso al servidor SFTP.
-						</div>
-					</p>
-					<p>
+						</p>
+					</div>
+					<div>
 						<strong>String password</strong>
-						<div>
+						<p>
 							Password de acceso al servidor SFTP.
-						</div>
-					</p>
+						</p>
+					</div>
 				</td>
 				<td></td>
 			</tr>
@@ -215,18 +212,18 @@
 					Metodo para cargar un archivo al servidor SFTP.
 				</td>
 				<td>
-					<p>
+					<div>
 						<strong>String filePath</strong>
 						<p>
 							Ruta y nombre del archivo en el FileSystem de la PC.
 						</p>
-					</p>
-					<p>
+					</div>
+					<div>
 						<strong>String ftpPath</strong>
 						<p>
 							Ruta y nombre del archivo en el servidor SFTP, dónde se subirá el archivo.
 						</p>
-					</p>
+					</div>
 				</td>
 				<td>
 					<strong>boolean</strong>
@@ -241,18 +238,18 @@
 					Metodo para descargar un archivo del servidor SFTP.
 				</td>
 				<td>
-					<p>
+					<div>
 						<strong>String ftpPath</strong>
 						<p>
 							Ruta y nombre del archivo en el servidor SFTP, de donde se descargará el archivo.
 						</p>
-					</p>
-					<p>
+					</div>
+					<div>
 						<strong>String filePath</strong>
 						<p>
 							Ruta y nombre del archivo donde será descargado en la PC.
 						</p>
-					</p>
+					</div>
 				</td>
 				<td>
 					<strong>boolean</strong>
@@ -267,11 +264,9 @@
 					Metodo que lista los archivos y carpetas en el servidor SFTP.
 				</td>
 				<td>
+					<strong>String path</strong>
 					<p>
-						<strong>String path</strong>
-						<p>
-							Ruta donde se buscarán los archivos y carpetas en el servidor SFTP.
-						</p>
+						Ruta donde se buscarán los archivos y carpetas en el servidor SFTP.
 					</p>
 				</td>
 				<td>
