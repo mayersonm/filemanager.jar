@@ -3,13 +3,13 @@
 	Implementación de rutinas para gestionar archivos.
 </p>
 
+<br><br>
 
 <div>
 	<h3>Clase FileSystem</h3>
 	<p>
 		Implementación de operaciones sobre archivos en el File System de la PC.
 	</p>
-	<br><br>
 	<table>
 		<thead>
 			<tr>
@@ -118,7 +118,9 @@
 		</tbody>
 	</table>
 </div>
+
 <br><br>
+
 <div>
 	<h3>Clase FileSFTP</h3>
 	<p>
@@ -134,6 +136,39 @@
 			</tr>
 		</thead>
 		<tbody>
+			<tr>
+				<td>FileSFTP</td>
+				<td>
+					Constructor.
+				</td>
+				<td>
+					<p>
+						<strong>String host</strong>
+						<div>
+							Ip o nombre del equipo con el servidor SFTP.
+						</div>
+					</p>
+					<p>
+						<strong>int port</strong>
+						<div>
+							Número de puerto del servidor SFTP.
+						</div>
+					</p>
+					<p>
+						<strong>String user</strong>
+						<div>
+							Usuario de acceso al servidor SFTP.
+						</div>
+					</p>
+					<p>
+						<strong>String password</strong>
+						<div>
+							Password de acceso al servidor SFTP.
+						</div>
+					</p>
+				</td>
+				<td></td>
+			</tr>
 			<tr>
 				<td>connect</td>
 				<td>
@@ -173,8 +208,6 @@
 					</p>
 				</td>
 			</tr>
-
-
 			<tr>
 				<td>put</td>
 				<td>
@@ -201,7 +234,6 @@
 					</p>
 				</td>
 			</tr>
-
 			<tr>
 				<td>get</td>
 				<td>
@@ -228,7 +260,6 @@
 					</p>
 				</td>
 			</tr>
-
 			<tr>
 				<td>ls</td>
 				<td>
