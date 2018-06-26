@@ -9,6 +9,7 @@
 	<p>
 		Implementación de operaciones sobre archivos en el File System de la PC.
 	</p>
+	<br><br>
 	<table>
 		<thead>
 			<tr>
@@ -117,7 +118,7 @@
 		</tbody>
 	</table>
 </div>
-
+<br><br>
 <div>
 	<h3>Clase FileSFTP</h3>
 	<p>
