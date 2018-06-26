@@ -5,14 +5,18 @@
 
 <div>
 	<h3>Dependencias</h3>
-	<p>
-		<strong>jsch-0.1.54.jar</strong>
-		Usado para el tratamiento SFTP.
-	</p>
+	<ul>
+		<li><strong>jsch-0.1.54.jar</strong>Usado para el tratamiento SFTP.</li>
+	</ul>
 </div>
+
+<br>
+
 <div>
 	<h3>Consideraciones</h3>
-	<p>El archivo FileManager-1.0-jar-with-dependencies.jar incluye las dependencias.</p>
+	<ul>
+		<li>El archivo <strong>FileManager-1.0-jar-with-dependencies.jar</strong> incluye las dependencias.</li>
+	</ul>
 </div>
 
 <br><br>
