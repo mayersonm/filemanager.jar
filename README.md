@@ -6,7 +6,7 @@
 <div>
 	<h3>Dependencias</h3>
 	<ul>
-		<li><strong>jsch-0.1.54.jar</strong>Usado para el tratamiento SFTP.</li>
+		<li><strong>jsch-0.1.54.jar</strong> usado para el tratamiento SFTP.</li>
 	</ul>
 </div>
 
