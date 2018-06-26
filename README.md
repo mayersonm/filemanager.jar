@@ -3,10 +3,9 @@
 	Implementación de rutinas para gestionar archivos.
 </p>
 
-<hr>
 
 <div>
-	<h2>Clase FileSystem</h2>
+	<h3>Clase FileSystem</h3>
 	<p>
 		Implementación de operaciones sobre archivos en el File System de la PC.
 	</p>
@@ -23,7 +22,7 @@
 			<tr>
 				<td>cp</td>
 				<td>
-					Metodo que permite copiar un archivo.
+					Metodo para copiar un archivo.
 				</td>
 				<td>
 					<p>
@@ -50,7 +49,7 @@
 			<tr>
 				<td>mv</td>
 				<td>
-					Metodo que permite mover un archivo.
+					Metodo para mover un archivo.
 				</td>
 				<td>
 					<p>
@@ -77,7 +76,7 @@
 			<tr>
 				<td>rm</td>
 				<td>
-					Metodo que borra un archivo.
+					Metodo para borrar un archivo.
 				</td>
 				<td>
 					<p>
