@@ -12,9 +12,9 @@
 	<table>
 		<thead>
 			<tr>
-				<th>Metodo</th>
-				<th>Descripcion</th>
-				<th>Entradas</th>
+				<th>Método</th>
+				<th>Descripción</th>
+				<th>Parámetros</th>
 				<th>Retorno</th>
 			</tr>
 		</thead>
@@ -104,6 +104,140 @@
 						<strong>String path</strong>
 						<p>
 							Ruta donde se buscarán los archivos y carpetas.
+						</p>
+					</p>
+				</td>
+				<td>
+					<strong>String[]</strong>
+					<p>
+						Array de <strong>String</strong> con los nombres de archivos encontrados.
+					</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div>
+	<h3>Clase FileSFTP</h3>
+	<p>
+		Implemenatación de operaciones para transferencia de archivos a través de SFTP.
+	</p>
+	<table>
+		<thead>
+			<tr>
+				<th>Método</th>
+				<th>Descripción</th>
+				<th>Parámetros</th>
+				<th>Retorno</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>connect</td>
+				<td>
+					Establece conexión con el servidor SFTP.
+				</td>
+				<td>
+					Sin parámetros.
+				</td>
+				<td>
+					void
+				</td>
+			</tr>
+			<tr>
+				<td>disconect</td>
+				<td>
+					Termina la conexión con el servidor SFTP.
+				</td>
+				<td>
+					Sin parámetros.
+				</td>
+				<td>
+					void
+				</td>
+			</tr>
+			<tr>
+				<td>isConected</td>
+				<td>
+					Verifica si se encuentra conectado al servidor SFTP.
+				</td>
+				<td>
+					Sin parámetros.
+				</td>
+				<td>
+					<strong>boolean</strong>
+					<p>
+						true, si se encuentra conectado al servidor SFTP.
+					</p>
+				</td>
+			</tr>
+
+
+			<tr>
+				<td>put</td>
+				<td>
+					Metodo para cargar un archivo al servidor SFTP.
+				</td>
+				<td>
+					<p>
+						<strong>String filePath</strong>
+						<p>
+							Ruta y nombre del archivo en el FileSystem de la PC.
+						</p>
+					</p>
+					<p>
+						<strong>String ftpPath</strong>
+						<p>
+							Ruta y nombre del archivo en el servidor SFTP, dónde se subirá el archivo.
+						</p>
+					</p>
+				</td>
+				<td>
+					<strong>boolean</strong>
+					<p>
+						Identifica si el archivo fue cargado al servidor SFTP.
+					</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td>get</td>
+				<td>
+					Metodo para descargar un archivo del servidor SFTP.
+				</td>
+				<td>
+					<p>
+						<strong>String ftpPath</strong>
+						<p>
+							Ruta y nombre del archivo en el servidor SFTP, de donde se descargará el archivo.
+						</p>
+					</p>
+					<p>
+						<strong>String filePath</strong>
+						<p>
+							Ruta y nombre del archivo donde será descargado en la PC.
+						</p>
+					</p>
+				</td>
+				<td>
+					<strong>boolean</strong>
+					<p>
+						Identifica si el archivo fue descargado al servidor SFTP.
+					</p>
+				</td>
+			</tr>
+
+			<tr>
+				<td>ls</td>
+				<td>
+					Metodo que lista los archivos y carpetas en el servidor SFTP.
+				</td>
+				<td>
+					<p>
+						<strong>String path</strong>
+						<p>
+							Ruta donde se buscarán los archivos y carpetas en el servidor SFTP.
 						</p>
 					</p>
 				</td>
