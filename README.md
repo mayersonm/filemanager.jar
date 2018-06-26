@@ -142,18 +142,19 @@
 					Constructor.
 				</td>
 				<td>
-					<p>
+					<div>
 						<strong>String host</strong>
-						<div>
+						<p>
 							Ip o nombre del equipo con el servidor SFTP.
-						</div>
-					</p>
-					<p>
+						</p>
+					</div>
+					<div>
 						<strong>int port</strong>
-						<div>
+						<p>
 							Número de puerto del servidor SFTP.
-						</div>
-					</p>
+						</p>
+					</div>
+
 					<p>
 						<strong>String user</strong>
 						<div>
