@@ -10,8 +10,6 @@
 	</ul>
 </div>
 
-<br>
-
 <div>
 	<h3>Consideraciones</h3>
 	<ul>
